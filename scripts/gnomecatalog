@@ -31,7 +31,7 @@ gtk.glade.textdomain (APP)
 
 
 app_name = "Gnome Catalog"
-app_version = '0.3.4'
+app_version = '0.3.4.2'
 app_authors = ["José Sánchez Moreno <jose@o2w.es>"]
 app_translators = _("Translators credits")
 gnome_program = gnome.program_init(app_name, app_version)

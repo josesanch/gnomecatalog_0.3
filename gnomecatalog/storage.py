@@ -40,6 +40,8 @@ class Sqlite:
 
 
 
+
+
 	def get_version(self):
 		rs = self.sql("select value from config where key='version'")
 		if len(rs) == 0:
@@ -50,6 +52,7 @@ class Sqlite:
 	def open_db_temp(self, tmpfile):
 		self.database = tmpfile
 		self.db = sqlite.connect(self.database) #, isolation_level=None )
+		self.db.text_factory = lambda x: unicode(x, "utf-8", "ignore")
 		self.cursor = self.db.cursor( factory=DictCursor )
 		if not os.path.exists(thumbnails.get_dir()):
 			os.mkdir(thumbnails.get_dir())
@@ -64,7 +67,7 @@ class Sqlite:
 		self.created = os.path.exists( self.database )
 		#self.db = sqlite.connect(database, encoding=('utf-8', 'ignore'))
 		self.db = sqlite.connect(self.database_tempfile, isolation_level=None )
-
+		self.db.text_factory = lambda x: unicode(x, "utf-8", "ignore")
 		self.cursor = self.db.cursor( factory=DictCursor )
 
 		if not self.created:
@@ -286,7 +289,7 @@ class Sqlite:
 #		icon = disk.get_icon().get_pixels()
 		disk.get_icon().save('/tmp/gnomecatalog_icon_disk.png', 'png')
 		data = open('/tmp/gnomecatalog_icon_disk.png', 'rb').read()
-		self.cursor.execute( "INSERT into disks (id, name, volname, root, icon, comment, borrow) values (NULL, ?, ?, ?, ?, ?, ?)", (disk.name, self._check(disk.name), self._check(disk.path), buffer(data), disk.comment, disk.borrow));
+		self.cursor.execute( "INSERT into disks (id, name, volname, root, icon, comment, borrow) values (NULL, ?, ?, ?, ?, ?, ?)", ( disk.name ,  disk.name, disk.path, buffer(data), disk.comment, disk.borrow));
 		return self.cursor.lastrowid;
 
 	""" Inserta los ficheros recursivamente """
@@ -305,7 +308,8 @@ class Sqlite:
 		""" Insetamos los metadatos del fichero """
 		if file.meta:
 			for key, val in file.meta.items():
-				self.__sql( "INSERT into metadata (id, key, value) values (" + str( idfile ) + ", '" + self._check( key ) + "', '" + self._check( val ) + "')" );
+				to_insert = ()
+				self.cursor.execute( "INSERT into metadata (id, key, value) values (?, ?, ?)", (str( idfile ), key , val ));
 
 		if config.get("thumbnails") == "True":
 			thumbnails.save(idfile, file)

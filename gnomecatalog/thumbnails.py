@@ -68,8 +68,11 @@ class Thumb:
 
 			else:
 				thumbnailer = self.__get_thumbnailers(file, type + "@" + subtype, idfile)
-				if thumbnailer != None:
-					output = commands.getoutput(thumbnailer)
+				try:
+					if thumbnailer != None:
+						output = commands.getoutput(thumbnailer)
+				except:
+					return None
 
 
 	def __get_thumbnailers(self, file, mime, idfile):

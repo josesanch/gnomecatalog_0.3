@@ -18,7 +18,8 @@ class Reader:
 		count = 0
 		for info in gnomevfs.DirectoryHandle(uri):
 			if info.name == '.' or info.name == '..' or info.name[0] == ".": continue
-			if info.type and info.type == 2: count += self.dir_count(uri + "/" + info.name)
+			if info.type and info.type == 2: count += self.dir_count(uri + "/" + urllib.quote (info.name))	# Patch from Tom Lees
+#			if info.type and info.type == 2: count += self.dir_count(uri + "/" + info.name)
 			count += 1
 		return count
 
@@ -42,6 +43,7 @@ class Reader:
 
 			""" Contamos los archivos primero, para luego poder poner el progreso """
 			self.count_files = self.dir_count(uri)
+# 			self.count_files = sum((len(f) for _, _, f in os.walk(path)))	# don't count correctly
 			gobject.timeout_add(500, self.update_progress_bar)
 
 
