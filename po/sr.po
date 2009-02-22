@@ -1,0 +1,296 @@
+# Serbian translation of gnome catalog
+# Courtesy of Prevod.org team (http://prevod.org/) -- 2009.
+# 
+# This file is distributed under the same license as the gnome catalog package.
+# 
+# Милош Поповић <gpopac@gmail.com>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome catalog\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-01-07 23:58+0100\n"
+"PO-Revision-Date: 2009-02-22 00:47+0100\n"
+"Last-Translator: Милош Поповић <gpopac@gmail.com>\n"
+"Language-Team: Serbian <gnom@prevod.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
+"10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: ../share/glade/dialogs.glade.h:1
+msgid "<b>Categories</b>"
+msgstr "<b>Категорије</b>"
+
+#: ../share/glade/dialogs.glade.h:2
+msgid "<b>Comment</b>"
+msgstr "<b>Коментар</b>"
+
+#: ../share/glade/dialogs.glade.h:3
+msgid "<b>Rating</b>"
+msgstr "<b>Оцена</b>"
+
+#: ../share/glade/dialogs.glade.h:4
+msgid "<b>¿Save the changes?</b>"
+msgstr "<b>Да сачувам измене?</b>"
+
+#: ../share/glade/dialogs.glade.h:5
+msgid "Add new disk"
+msgstr "Додај нови диск"
+
+#: ../share/glade/dialogs.glade.h:6
+msgid "Categories, Comments"
+msgstr "Категорије, Коментари"
+
+#: ../share/glade/dialogs.glade.h:7 ../share/glade/dialogs.glade.h:5
+msgid "Category"
+msgstr "Категорија"
+
+#: ../share/glade/dialogs.glade.h:8 ../share/glade/dialogs.glade.h:6
+msgid "Close _without save"
+msgstr "Затвори _без чувања"
+
+#: ../share/glade/dialogs.glade.h:9 ../share/glade/dialogs.glade.h:7
+msgid "Eject disk after disk read"
+msgstr "Избаци диск након читања"
+
+#: ../share/glade/dialogs.glade.h:10
+msgid "File information"
+msgstr "Подаци о датотеци"
+
+#: ../share/glade/dialogs.glade.h:11 ../share/glade/dialogs.glade.h:8
+msgid "If don't save the changes will be lost."
+msgstr "Измене ће бити изгубљене уколико их не сачувате."
+
+#: ../share/glade/dialogs.glade.h:12 ../share/glade/dialogs.glade.h:9
+msgid "Importing data from disk. Please <b>wait a moment</b>........."
+msgstr "Увоз податка са диска. Сачекајте неко време..."
+
+#: ../share/glade/dialogs.glade.h:13
+msgid "Importing disk"
+msgstr "Увозим диск"
+
+#: ../share/glade/dialogs.glade.h:14 ../share/glade/dialogs.glade.h:10
+msgid "Nombre del archivo.avi"
+msgstr "Име датотеке.avi"
+
+#: ../share/glade/dialogs.glade.h:15
+msgid "Preferences"
+msgstr "Поставке"
+
+#: ../share/glade/dialogs.glade.h:16
+msgid "Save dialog"
+msgstr "Прозорче за чување"
+
+#: ../share/glade/dialogs.glade.h:17 ../share/glade/dialogs.glade.h:11
+msgid "Save thumbnails in the database"
+msgstr "Сачувај слике са прегледом у базу"
+
+#: ../share/glade/dialogs.glade.h:18
+msgid "Seleccione un directorio"
+msgstr "Изаберите директоријум"
+
+#: ../share/glade/dialogs.glade.h:19 ../share/glade/dialogs.glade.h:12
+msgid "Select path to read"
+msgstr "Изаберите путању"
+
+#: ../share/glade/dialogs.glade.h:20
+msgid "gnome Catalog"
+msgstr "Гномов каталог"
+
+#: ../share/glade/gnomecatalog.glade.h:1
+msgid "Catalog"
+msgstr "Каталог"
+
+#: ../share/glade/gnomecatalog.glade.h:2 lib/gnomecatalog/ui/app.py:43
+#: lib/gnomecatalog/ui/dialogs.py:145 lib/gnomecatalog/ui/app.py:46
+#: lib/gnomecatalog/ui/dialogs.py:157 ../share/glade/gnomecatalog.glade.h:1
+msgid "Categories"
+msgstr "Категорије"
+
+#: ../share/glade/gnomecatalog.glade.h:3
+msgid "Disk"
+msgstr "Доск"
+
+#: ../share/glade/gnomecatalog.glade.h:4
+msgid "New _Catalog"
+msgstr "Нови к_аталог"
+
+#: ../share/glade/gnomecatalog.glade.h:5
+msgid "New _Disk"
+msgstr "Нови _диск"
+
+#: ../share/glade/gnomecatalog.glade.h:6
+msgid "Rename"
+msgstr "Преименуј"
+
+#: ../share/glade/gnomecatalog.glade.h:7
+msgid "_Edit"
+msgstr "_Уреди"
+
+#: ../share/glade/gnomecatalog.glade.h:8 ../share/glade/gnomecatalog.glade.h:9
+msgid "_File"
+msgstr "_Датотека"
+
+#: ../share/glade/gnomecatalog.glade.h:9
+#: ../share/glade/gnomecatalog.glade.h:10
+msgid "_Help"
+msgstr "_Помоћ"
+
+#: ../share/glade/gnomecatalog.glade.h:10
+#: ../share/glade/gnomecatalog.glade.h:12
+msgid "_Properties"
+msgstr "_Особине"
+
+#: ../share/glade/gnomecatalog.glade.h:11
+#: ../share/glade/gnomecatalog.glade.h:13
+msgid "_View"
+msgstr "П_реглед"
+
+#: lib/gnomecatalog/ui/dialogs.py:13 lib/gnomecatalog/ui/dialogs.py:355
+#: lib/gnomecatalog/ui/dialogs.py:386 lib/gnomecatalog/ui/dialogs.py:396
+msgid "Open database"
+msgstr "Отвори базу података"
+
+#: lib/gnomecatalog/ui/dialogs.py:22 lib/gnomecatalog/ui/dialogs.py:52
+#: lib/gnomecatalog/ui/dialogs.py:84 lib/gnomecatalog/ui/dialogs.py:370
+#: lib/gnomecatalog/ui/dialogs.py:407 lib/gnomecatalog/ui/dialogs.py:417
+msgid "Gnome Catalog Files"
+msgstr "Датотеке Гномовиг каталога"
+
+#: lib/gnomecatalog/ui/dialogs.py:27 lib/gnomecatalog/ui/dialogs.py:57
+#: lib/gnomecatalog/ui/dialogs.py:89 lib/gnomecatalog/ui/dialogs.py:375
+#: lib/gnomecatalog/ui/dialogs.py:412 lib/gnomecatalog/ui/dialogs.py:376
+#: lib/gnomecatalog/ui/dialogs.py:422
+msgid "All files"
+msgstr "Све датотеке"
+
+#: lib/gnomecatalog/ui/dialogs.py:43
+msgid "New database"
+msgstr "Нове датотеке"
+
+#: lib/gnomecatalog/ui/dialogs.py:75
+msgid "Save as"
+msgstr "Сачувај као"
+
+#: lib/gnomecatalog/ui/dialogs.py:92
+msgid "Don't save thumbnails."
+msgstr "Не чувај слике са прегледом."
+
+#: lib/gnomecatalog/ui/dialogs.py:210 lib/gnomecatalog/ui/dialogs.py:223
+msgid "New category"
+msgstr "Нова категорија"
+
+#: lib/gnomecatalog/ui/treeviews.py:15
+msgid "Disks"
+msgstr "Дискови"
+
+#: lib/gnomecatalog/ui/treeviews.py:133 lib/gnomecatalog/ui/treeviews.py:136
+#: lib/gnomecatalog/ui/treeviews.py:139
+msgid "Files"
+msgstr "Датотеке"
+
+#: lib/gnomecatalog/ui/treeviews.py:145 lib/gnomecatalog/data.py:120
+#: lib/gnomecatalog/ui/dialogs.py:133 lib/gnomecatalog/ui/treeviews.py:148
+#: lib/gnomecatalog/ui/treeviews.py:151
+msgid "Size"
+msgstr "Величина"
+
+#: lib/gnomecatalog/ui/treeviews.py:150 lib/gnomecatalog/ui/treeviews.py:153
+#: lib/gnomecatalog/ui/treeviews.py:156
+msgid "Rating"
+msgstr "Оцена"
+
+#: lib/gnomecatalog/data.py:92 lib/gnomecatalog/data.py:102
+#: lib/gnomecatalog/data.py:97 lib/gnomecatalog/data.py:59
+#: lib/gnomecatalog/data.py:105
+msgid "files"
+msgstr "датотеке"
+
+#: lib/gnomecatalog/data.py:97 lib/gnomecatalog/data.py:110
+#: lib/gnomecatalog/data.py:105 lib/gnomecatalog/data.py:113
+msgid "Searching..."
+msgstr "Тражим..."
+
+#: lib/gnomecatalog/data.py:119 lib/gnomecatalog/ui/dialogs.py:132
+msgid "Type"
+msgstr "Врста"
+
+#: lib/gnomecatalog/data.py:132 lib/gnomecatalog/data.py:150
+#: lib/gnomecatalog/data.py:145 lib/gnomecatalog/data.py:153
+msgid "No name"
+msgstr "Без имена"
+
+#: lib/gnomecatalog/storage.py:69 lib/gnomecatalog/storage.py:73
+#: lib/gnomecatalog/storage.py:144
+msgid "Movies"
+msgstr "Филмови"
+
+#: lib/gnomecatalog/storage.py:69 lib/gnomecatalog/storage.py:73
+#: lib/gnomecatalog/storage.py:144
+msgid "Audio"
+msgstr "Музика"
+
+#: lib/gnomecatalog/storage.py:69 lib/gnomecatalog/storage.py:73
+#: lib/gnomecatalog/storage.py:144
+msgid "Pictures"
+msgstr "Слике"
+
+#: lib/gnomecatalog/storage.py:69 lib/gnomecatalog/storage.py:73
+#: lib/gnomecatalog/storage.py:144
+msgid "Documents"
+msgstr "Документи"
+
+#: ../share/glade/dialogs.glade.h:4
+msgid "<b>Save the changes?</b>"
+msgstr "<b>Да сачувам измене?</b>"
+
+#: ../share/glade/gnomecatalog.glade.h:8
+msgid "_Export"
+msgstr "И_звези"
+
+#: ../share/glade/gnomecatalog.glade.h:11
+msgid "_Import"
+msgstr "_Увези"
+
+#: lib/gnomecatalog/ui/app.py:46
+msgid "File types"
+msgstr "Врсте датотека"
+
+#: lib/gnomecatalog/ui/app.py:55
+msgid "Audio files"
+msgstr "Звучне датотеке"
+
+#: lib/gnomecatalog/ui/app.py:55
+msgid "Image files"
+msgstr "Датотеке са сликом"
+
+#: lib/gnomecatalog/ui/app.py:55
+msgid "Text files"
+msgstr "Текстуалне датотеке"
+
+#: lib/gnomecatalog/reader.py:59 lib/gnomecatalog/reader.py:73
+#: lib/gnomecatalog/reader.py:88
+msgid "Importando "
+msgstr "Увозим "
+
+#: lib/gnomecatalog/ui/app.py:55
+msgid "Video files"
+msgstr "Видео датотеке"
+
+#: lib/gnomecatalog/ui/dialogs.py:398 lib/gnomecatalog/ui/dialogs.py:408
+msgid "Select file type"
+msgstr "Изаберите врсту датотеке"
+
+#: gnomecatalog.py:35
+msgid "Translators credits"
+msgstr "Милош Поповић <gpopac@gmail.com>"
+
+#: ../share/glade/gnomecatalog.glade.h:2
+msgid "Export"
+msgstr "Извези"
+
+#: ../share/glade/gnomecatalog.glade.h:3 lib/gnomecatalog/ui/dialogs.py:355
+msgid "Export database"
+msgstr "Извези базу"
